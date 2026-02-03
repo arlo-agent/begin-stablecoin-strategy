@@ -1,6 +1,6 @@
 # Begin Feature Reorganization Options
 
-*"The Stablecoin Bank Onchain" — What do we do with existing features?*
+*"Your Stablecoin Home Onchain" — What do we do with existing features?*
 
 ---
 
@@ -49,7 +49,7 @@
 
 ## Option 1: "Clean Slate" — Full Rebrand
 
-**Philosophy:** Rebuild home screen entirely around bank metaphor. Hide non-bank features.
+**Philosophy:** Rebuild home screen entirely around home metaphor. Hide non-bank features.
 
 ### New Structure
 ```
@@ -193,7 +193,7 @@ MORE
 
 ## Option 4: "Bank + Power Menu" — Hybrid (RECOMMENDED)
 
-**Philosophy:** Bank-first home, power features in slide-out menu.
+**Philosophy:** Stablecoin-first home, power features in slide-out menu.
 
 ### New Structure
 ```
@@ -248,7 +248,7 @@ HAMBURGER MENU [≡]
 4. **"Advanced"** = Crypto-native features for power users
 
 ### Pros
-- ✅ Bank-first without losing features
+- ✅ Stablecoin-first without losing features
 - ✅ Clean home screen
 - ✅ Power users can find everything
 - ✅ Easy to add/remove features
@@ -266,7 +266,7 @@ HAMBURGER MENU [≡]
 
 | Old Location | New Location | Notes |
 |--------------|--------------|-------|
-| Wallet Home | **Home** (redesigned) | Bank-style balance |
+| Wallet Home | **Home** (redesigned) | Clean balance view |
 | Invest > Lend | **Earn > Savings Vault** | Core feature |
 | Invest > Staking | **Earn > Staking** | Keep |
 | Invest > Metals | **Remove** or Shop | Off-brand |

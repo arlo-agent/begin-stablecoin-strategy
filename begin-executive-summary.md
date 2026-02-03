@@ -8,9 +8,10 @@
 
 **$84B+ stablecoin financial services market by 2026.** Regulatory clarity (GENIUS Act, MiCA) has opened a window. The infrastructure layer exists; the services layer remains unbuilt.
 
-**Positioning: "Begin — The Stablecoin Bank Onchain"**
+**Positioning: "Begin — Your Stablecoin Home Onchain"**
+*The onchain complement to your bank.*
 
-Not another multi-chain wallet. The onchain alternative to your bank — stablecoins, yield, savings, DCA. Bank-grade UX, DeFi yields, self-custody security.
+Not just another wallet. The home for your stablecoins — earn yield, save smarter, stay in control. Premium UX meets DeFi yields with self-custody security.
 
 ---
 

@@ -8,12 +8,12 @@
 
 ## Executive Summary
 
-**Positioning: "Begin — The Stablecoin Bank Onchain"**
+**Positioning: "Begin — Your Stablecoin Home Onchain"**
 
-Begin isn't another multi-chain wallet. It's the **onchain alternative to your bank** — focused on stablecoins, yield, and financial services. This document outlines a premium subscription strategy based on:
+Begin isn't another multi-chain wallet. It's the **onchain complement to your bank** — focused on stablecoins, yield, and financial services. This document outlines a premium subscription strategy based on:
 1. Competitor analysis (CoinStats, Zerion, Ledger, Exodus)
 2. Current Begin codebase capabilities (b58-extension analysis)
-3. Stablecoin banking market opportunity ($84B+ by 2026)
+3. Stablecoin home market opportunity ($84B+ by 2026)
 4. User acquisition economics
 
 **Key Recommendation:** Launch a 3-tier subscription model (Free / Pro / Enterprise) with **Begin Pro at $9.99/month** ($7.99/month billed annually), monetizing features that are either already built or can be implemented within 30 days.
@@ -45,11 +45,11 @@ Begin isn't another multi-chain wallet. It's the **onchain alternative to your b
 | Advantage | Description | Premium Opportunity |
 |-----------|-------------|---------------------|
 | **Stablecoin-First** | Built around USDC, USDT, USDA, USDM | Savings vaults, yield optimization |
-| **Bank-Grade UX** | Clean, simple, no crypto jargon | "Feels like a bank app, earns like DeFi" |
+| **Bank-Grade UX** | Clean, simple, no crypto jargon | "Feels like home, earns like DeFi" |
 | **Yield Aggregation** | Best rates across Liqwid, FluidTokens, LPs | Auto-compound, set-and-forget savings |
 | **Multi-Chain Coverage** | Solana + Cardano + Bitcoin under the hood | Users don't need to think about chains |
 | **DCA & Automation** | Recurring buys, automated strategies | "Savings account that grows itself" |
-| **Self-Custody Security** | Your keys, your coins — but easy | Bank convenience + DeFi ownership |
+| **Self-Custody Security** | Your keys, your coins — but easy | Home convenience + DeFi ownership |
 
 ---
 
@@ -87,7 +87,7 @@ Begin isn't another multi-chain wallet. It's the **onchain alternative to your b
 | Ledger Recover | $9.99/mo for single feature | Sets floor for "premium feel" |
 | Cardano user base | ~growing multi-chain user base (Cardano + Bitcoin + Solana) | Growing market = premium positioning possible |
 | User acquisition cost | $14-31 per trader | Need LTV > $50 = 5+ months retention |
-| Competitor-free zone | No stablecoin banking alternatives | First-mover advantage |
+| Competitor-free zone | No stablecoin home alternatives | First-mover advantage |
 
 **Recommended: $9.99/mo Pro** — below CoinStats, at Ledger level, achievable LTV with 6-month retention.
 
@@ -536,14 +536,14 @@ const TIER_FEATURES: Record<string, FeatureFlags> = {
 
 ### Messaging Framework
 
-**Tagline:** "Begin Pro: The Stablecoin Bank Onchain"
+**Tagline:** "Begin Pro: Your Stablecoin Home Onchain"
 
 **Key Differentiators:**
 
 | vs. Competitor | Begin Advantage | Message |
 |----------------|-----------------|---------|
 | vs. CoinStats | Cardano-native DeFi integration | "Built for DeFi (multi-chain), not just tracking" |
-| vs. Zerion | Lower price, stablecoin focus | "Banking features, DeFi yields" |
+| vs. Zerion | Lower price, stablecoin focus | "Financial features, DeFi yields" |
 | vs. Eternl/Nami | Premium features they don't have | "The features serious crypto users need" |
 | vs. Lace | DeFi-native, yield optimization | "Beyond IOG's basic wallet" |
 

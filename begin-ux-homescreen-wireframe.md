@@ -1,12 +1,13 @@
 # Begin Home Screen UX Wireframe
 
-*"The Stablecoin Bank Onchain"*
+*"Your Stablecoin Home Onchain"*
+*The onchain complement to your bank.*
 
 ---
 
 ## Design Philosophy
 
-1. **Bank-first, crypto-second** — Language and layout familiar to banking apps
+1. **Stablecoin-first, crypto-second** — Language and layout familiar to banking apps
 2. **Stablecoins prominent** — Not buried under "tokens"
 3. **Actions oriented around money goals** — Save, Send, Earn, Spend
 4. **Chains invisible** — Users see dollars, not networks
@@ -335,7 +336,7 @@ Bottom sheet with options:
 
 ## What This UX Communicates
 
-1. **"This is a bank"** — Not a crypto trading app
+1. **"This is home for your stablecoins"** — Not a crypto trading app
 2. **"Your money grows here"** — Yield is front and center
 3. **"Stablecoins matter"** — Cash section is prominent
 4. **"Simple but powerful"** — Clean UI, deep features
@@ -355,7 +356,7 @@ Bottom sheet with options:
 - Speaks to traders
 ```
 
-### Begin "Stablecoin Bank" Home
+### Begin "Stablecoin Home" Home
 ```
 - Cash vs Investments separation
 - Yield prominently shown
