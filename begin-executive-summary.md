@@ -6,7 +6,11 @@
 
 ## The Opportunity
 
-**$84B+ stablecoin financial services market by 2026.** Regulatory clarity (GENIUS Act, MiCA) has opened a window. The infrastructure layer exists; the services layer remains unbuilt. Begin can become "The Stablecoin Bank for Cardano."
+**$84B+ stablecoin financial services market by 2026.** Regulatory clarity (GENIUS Act, MiCA) has opened a window. The infrastructure layer exists; the services layer remains unbuilt.
+
+**Positioning: "Begin — The Stablecoin Bank Onchain"**
+
+Not another multi-chain wallet. The onchain alternative to your bank — stablecoins, yield, savings, DCA. Bank-grade UX, DeFi yields, self-custody security.
 
 ---
 
