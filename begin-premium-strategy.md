@@ -11,7 +11,7 @@
 This document outlines a comprehensive premium subscription strategy for Begin Wallet based on:
 1. Competitor analysis (CoinStats, Zerion, Ledger, Exodus)
 2. Current Begin codebase capabilities (b58-extension analysis)
-3. Cardano ecosystem market size
+3. Multi-chain wallet market positioning
 4. User acquisition economics
 
 **Key Recommendation:** Launch a 3-tier subscription model (Free / Pro / Enterprise) with **Begin Pro at $9.99/month** ($7.99/month billed annually), monetizing features that are either already built or can be implemented within 30 days.
@@ -42,11 +42,12 @@ This document outlines a comprehensive premium subscription strategy for Begin W
 
 | Advantage | Description | Premium Opportunity |
 |-----------|-------------|---------------------|
-| **Cardano-Native** | Deep protocol integration (Liqwid, FluidTokens, 14+ DEXs) | Best yield routing, exclusive features |
-| **Multi-DEX Aggregation** | DexHunter integration already built | "Best Route Pro" with guaranteed savings |
-| **Lending Integration** | Full Liqwid supply/borrow/repay flows | Yield optimization, auto-compound |
-| **Mobile + Extension** | Capacitor iOS/Android exists | Premium mobile features |
-| **Stablecoin Focus** | Registry of 6 stablecoins, specialized UX | Stablecoin-specific analytics |
+| **True Multi-Chain** | Cardano + Bitcoin + Solana in one wallet | Unified portfolio across chains |
+| **Multi-DEX Aggregation** | DexHunter (14+ DEXs), Jupiter (Solana) | "Best Route Pro" with guaranteed savings |
+| **DeFi Integration** | Liqwid (Cardano), native staking (all chains) | Yield optimization, auto-compound |
+| **Mobile + Extension** | Capacitor iOS/Android + browser extension | Seamless premium experience everywhere |
+| **Stablecoin Focus** | USDC/USDT on Solana, USDA/USDM on Cardano | Cross-chain stablecoin management |
+| **Premium UX** | Clean design, fast performance | "Feels like Apple, works like DeFi" |
 
 ---
 
@@ -82,9 +83,9 @@ This document outlines a comprehensive premium subscription strategy for Begin W
 |--------|----------|-------------------|
 | CoinStats benchmark | $13.99/mo for similar features | Sets ceiling |
 | Ledger Recover | $9.99/mo for single feature | Sets floor for "premium feel" |
-| Cardano user base | ~500K active wallets | Limited market = competitive pricing |
+| Cardano user base | ~growing multi-chain user base (Cardano + Bitcoin + Solana) | Growing market = premium positioning possible |
 | User acquisition cost | $14-31 per trader | Need LTV > $50 = 5+ months retention |
-| Competitor-free zone | No Cardano-specific premium wallets | First-mover advantage |
+| Competitor-free zone | No multi-chain premium self-custody wallets | First-mover advantage |
 
 **Recommended: $9.99/mo Pro** — below CoinStats, at Ledger level, achievable LTV with 6-month retention.
 
@@ -299,7 +300,7 @@ if (alerts.length >= MAX_FREE_ALERTS && !isPro) {
 
 | Metric | Conservative | Moderate | Optimistic |
 |--------|--------------|----------|------------|
-| Cardano active wallets | 500,000 | 500,000 | 500,000 |
+| Begin target users | 500,000 | 500,000 | 500,000 |
 | Begin market share | 2% | 5% | 10% |
 | Begin active users | 10,000 | 25,000 | 50,000 |
 | Pro conversion rate | 5% | 7% | 10% |
@@ -533,15 +534,15 @@ const TIER_FEATURES: Record<string, FeatureFlags> = {
 
 ### Messaging Framework
 
-**Tagline:** "Begin Pro: Professional-Grade Cardano Wallet"
+**Tagline:** "Begin Pro: The Premium Multi-Chain Wallet"
 
 **Key Differentiators:**
 
 | vs. Competitor | Begin Advantage | Message |
 |----------------|-----------------|---------|
-| vs. CoinStats | Cardano-native DeFi integration | "Built for Cardano DeFi, not just tracking" |
-| vs. Zerion | Lower price, stablecoin focus | "Half the price, twice the Cardano features" |
-| vs. Eternl/Nami | Premium features they don't have | "The features serious Cardano users need" |
+| vs. CoinStats | Cardano-native DeFi integration | "Built for DeFi (multi-chain), not just tracking" |
+| vs. Zerion | Lower price, stablecoin focus | "Half the price, premium multi-chain experience" |
+| vs. Eternl/Nami | Premium features they don't have | "The features serious crypto users need" |
 | vs. Lace | DeFi-native, yield optimization | "Beyond IOG's basic wallet" |
 
 ### Positioning Matrix
@@ -627,7 +628,7 @@ const TIER_FEATURES: Record<string, FeatureFlags> = {
 |------|------------|--------|------------|
 | Low conversion rate | Medium | High | A/B test pricing, features |
 | Competitor response | Low | Medium | First-mover advantage, iterate fast |
-| Cardano bear market | Medium | Medium | Focus on utility over speculation |
+| Crypto bear market | Medium | Medium | Focus on utility over speculation |
 
 ### Operational Risks
 
@@ -648,7 +649,7 @@ const TIER_FEATURES: Record<string, FeatureFlags> = {
 | P&L Tracking | ❌ | ✅ | ✅ | ✅ |
 | Tax Export | ❌ | ✅ | ✅ | ✅ |
 | Price Alerts | 3 | Unlimited | Custom | Limited |
-| **Cardano DeFi** | ✅ | ✅ | ❌ | ❌ |
+| **DeFi (multi-chain)** | ✅ | ✅ | ❌ | ❌ |
 | **Multi-DEX Routing** | Basic | Pro | ❌ | ❌ |
 | **Liqwid Integration** | ✅ | ✅ | ❌ | ❌ |
 | **Yield Optimization** | ❌ | ✅ | ❌ | ❌ |
