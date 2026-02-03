@@ -204,16 +204,33 @@ Position Begin as the **primary interface** between users and Cardano's stableco
 |----------------|-------|
 | **Vault management fee** | 0.1-0.5% annual on AUM |
 | **Swap routing fee** | 0.05-0.1% per transaction |
-| **Premium features** | Subscription for advanced analytics, priority execution |
+| **Premium subscription** | $9.99/mo Pro, $49.99/mo Enterprise |
 | **B2B API access** | Enterprise pricing for treasury management |
+
+### Premium Subscription Model
+
+See **[Begin Premium Strategy](begin-premium-strategy.md)** for detailed subscription monetization:
+
+| Tier | Monthly | Annual | Key Features |
+|------|---------|--------|--------------|
+| Free | $0 | $0 | Basic wallet, 3 wallets, basic DeFi |
+| **Pro** | $9.99 | $95.88 | P&L tracking, CSV export, Best Route PRO, unlimited alerts |
+| Enterprise | $49.99 | $479.88 | API access, unlimited wallets, team management |
+| Pro Lifetime | — | $199 | All Pro features, forever |
+
+**Year 1 Revenue Projections:**
+- Conservative: $51,000 (500 Pro subscribers)
+- Moderate: $178,500 (1,750 Pro subscribers)
+- Optimistic: $510,000 (5,000 Pro subscribers)
 
 ### Projections (Conservative)
 
 If Begin captures 5% of Cardano stablecoin volume (~$50M):
 - Vault AUM: $2.5M → $12.5K-$62.5K annual revenue
 - Swap volume: $500K/month → $3K-$6K monthly revenue
+- **Premium subscriptions: $50K-180K ARR**
 
-Small but growing with ecosystem. Real upside = Cardano DeFi growth.
+Small but growing with ecosystem. Real upside = Cardano DeFi growth + subscription revenue.
 
 ---
 

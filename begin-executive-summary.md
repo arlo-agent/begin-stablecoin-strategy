@@ -110,9 +110,34 @@ React Native + Expo. Budget 6 months. Existing migration plan is solid.
 |--------|-------|
 | Vault management fee | 0.1-0.5% annual AUM |
 | Swap routing fee | 0.05-0.1% per tx |
-| Premium features | Subscription for advanced analytics |
+| **Premium subscription** | **$9.99/mo Pro tier** (see detailed strategy below) |
 
 **Conservative projection:** 5% of Cardano stablecoin flow (~$50M) = $50-100K ARR
+
+### Premium Subscription Strategy
+
+See **[Begin Premium Strategy](begin-premium-strategy.md)** for comprehensive subscription monetization plan:
+
+| Tier | Price | Key Features |
+|------|-------|--------------|
+| **Free** | $0 | Basic wallet, 3 wallets, basic DeFi |
+| **Pro** | $9.99/mo | P&L tracking, CSV export, Best Route PRO, unlimited alerts, yield optimizer |
+| **Enterprise** | $49.99/mo | API access, unlimited wallets, team management |
+
+**Year 1 Revenue Projection (Moderate):** $178,500 ARR with 1,750 Pro subscribers
+
+**Launch-Ready Features (Already Built):**
+- Multi-DEX "Best Route PRO" (gate existing DexHunter integration)
+- Unlimited price alerts (existing `usePriceAlert.ts`)
+- Extended wallet limits (configuration change)
+- Extended trade history (query filtering)
+
+**Near-Term Premium Features (1-3 months):**
+- P&L tracking with cost basis
+- CSV tax export
+- Yield optimization recommendations
+- Auto-compound for Liqwid positions
+- DCA automation
 
 ---
 
@@ -165,6 +190,7 @@ The research, implementation plans, and roadmap are ready. Time to build.
 | CLI Implementation Plan | `research/begin-stablecoin-implementation-plan.md` |
 | Extension Implementation Plan | `research/begin-extension-stablecoin-implementation-plan.md` |
 | Native vs Extension Evaluation | `research/begin-native-vs-extension-evaluation.md` |
+| **Premium Strategy** | `research/begin-premium-strategy.md` |
 | **This Summary** | `research/begin-executive-summary.md` |
 
 ---
