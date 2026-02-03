@@ -78,7 +78,7 @@ export const stableTokens = [
 
 ### Feature 1: Stablecoin Savings Vault (HIGH PRIORITY)
 
-**Strategic Goal:** One-tap deposit → earn yield across Liqwid/Lenfi with auto-compound
+**Strategic Goal:** One-tap deposit → earn yield across Liqwid/FluidTokens with auto-compound
 
 #### What Exists
 - Liqwid lending integration (`view-lend.tsx`)
@@ -102,14 +102,14 @@ interface VaultStrategy {
 }
 
 interface ProtocolAllocation {
-  protocol: 'liqwid' | 'lenfi' | 'minswap';
+  protocol: 'liqwid' | 'fluidtokens' | 'minswap';
   percentage: number;
   stablecoins: string[]; // token_ids
 }
 
 // Conservative: 100% Liqwid lending (audited, highest TVL)
-// Balanced: 70% Liqwid, 30% Lenfi
-// Aggressive: 50% Liqwid, 30% Lenfi, 20% LP positions
+// Balanced: 70% Liqwid, 30% FluidTokens
+// Aggressive: 50% Liqwid, 30% FluidTokens, 20% LP positions
 ```
 
 ##### 1.2 New Hook: useVault
@@ -201,7 +201,7 @@ const useVault = () => {
 
 1. **Create vault data models** (`src/models/vault.ts`)
 2. **Build useVault hook** leveraging existing `useLiqwid`
-3. **Add Lenfi integration** (new hook `useLenfi.ts`)
+3. **Add FluidTokens integration** (new hook `useFluidTokens.ts`)
 4. **Create VaultCard component** for home screen
 5. **Build full vault view** with strategy selection
 6. **Implement deposit/withdraw bottom sheets**
@@ -387,7 +387,7 @@ const useYieldAggregator = () => {
 │  └─────────────────────────────────┘   │
 │                                         │
 │  ┌─────────────────────────────────┐   │
-│  │ 📈 Lenfi • USDA Lending         │   │
+│  │ 📈 FluidTokens • USDA Lending         │   │
 │  │ 3.8% APY         TVL: $2.1M     │   │
 │  │ Risk: Low ●○○    Audited ✓      │   │
 │  │                     [Deposit →] │   │
@@ -396,7 +396,7 @@ const useYieldAggregator = () => {
 │  Historical APY Comparison              │
 │  ┌─────────────────────────────────┐   │
 │  │    [Line chart: 30-day APYs]    │   │
-│  │    --- Liqwid  --- Lenfi        │   │
+│  │    --- Liqwid  --- FluidTokens        │   │
 │  └─────────────────────────────────┘   │
 │                                         │
 └─────────────────────────────────────────┘
@@ -735,7 +735,7 @@ Add swipe actions or long-press menu:
 | `/api/yields/:protocol` | Protocol-specific yields | Begin backend (new) |
 | `/api/pegs` | Stablecoin peg status | Begin backend (new) |
 | `/api/dca/schedules` | DCA schedule storage | Begin backend (new) |
-| Lenfi GraphQL | Lenfi protocol data | Lenfi (integration needed) |
+| FluidTokens GraphQL | FluidTokens protocol data | FluidTokens (integration needed) |
 
 ### Existing APIs to Leverage
 
@@ -881,7 +881,7 @@ src/
 │   ├── useYieldAggregator.ts (NEW)
 │   ├── useStablePeg.ts      (NEW)
 │   ├── useDCA.ts            (NEW)
-│   ├── useLenfi.ts          (NEW)
+│   ├── useFluidTokens.ts          (NEW)
 │   └── ... existing hooks
 ├── models/
 │   ├── vault.ts             (NEW)

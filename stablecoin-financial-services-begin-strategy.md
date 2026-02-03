@@ -62,7 +62,7 @@ The stablecoin financial services layer represents an **$84B+ market opportunity
 | **Minswap** | DEX | ~$40M | Largest AMM, MIN token |
 | **Liqwid** | Lending | ~$25M | Aave-style, LQ token |
 | **Indigo** | Synthetics | ~$20M | iAssets, INDY token |
-| **Lenfi** | Lending | ~$8M | P2P lending pools |
+| **FluidTokens** | Lending | ~$8M | P2P lending pools |
 | **SundaeSwap** | DEX | ~$5M | Early DEX, SUNDAE token |
 
 ### The Gap
@@ -85,7 +85,7 @@ Position Begin as the **primary interface** between users and Cardano's stableco
 ### Product Opportunities (Prioritized)
 
 #### 1. Stablecoin Savings Vault (High Priority)
-**What:** One-tap deposit → earn yield across Liqwid/Lenfi/Minswap LPs
+**What:** One-tap deposit → earn yield across Liqwid/FluidTokens/Minswap LPs
 **Why:** 
 - "Replacing low-rate bank deposits with on-chain, auto-rebase savings" (industry trend)
 - Morpho Vaults model: auto-allocate to best risk-adjusted yield
@@ -118,7 +118,7 @@ Position Begin as the **primary interface** between users and Cardano's stableco
 - Drives traffic to vault product
 
 **Implementation:**
-- Aggregate APYs from Liqwid, Lenfi, Minswap, Indigo
+- Aggregate APYs from Liqwid, FluidTokens, Minswap, Indigo
 - Historical yield charts
 - Risk indicators (audit status, TVL, age)
 

@@ -33,7 +33,7 @@ This document provides a detailed technical implementation plan for transforming
 
 | Feature | Priority | Effort | Dependencies |
 |---------|----------|--------|--------------|
-| **Yield Rate Aggregation** | High | Medium | Liqwid API, Lenfi API, Minswap LP data |
+| **Yield Rate Aggregation** | High | Medium | Liqwid API (FluidTokens later), Minswap LP data |
 | **Vault/Strategy System** | High | High | Smart contracts or aggregator integration |
 | **Multi-DEX Routing** | Medium | Medium | SundaeSwap, WingRiders APIs |
 | **Stablecoin Token Registry** | High | Low | Token metadata service |
@@ -128,7 +128,7 @@ Create a new service module that aggregates yield data from multiple protocols:
 // NEW FILE: src/services/yield-aggregator.ts
 
 export interface YieldSource {
-  protocol: string;           // 'liqwid', 'lenfi', 'minswap-lp', 'indigo'
+  protocol: string;           // 'liqwid', 'fluidtokens', 'minswap-lp', 'indigo'
   asset: string;              // 'USDA', 'USDM', 'iUSD', 'ADA'
   type: 'lending' | 'lp' | 'staking' | 'synthetic';
   apy: number;                // Current APY as percentage
@@ -173,9 +173,9 @@ export class LiqwidAdapter implements ProtocolAdapter {
   }
 }
 
-// Lenfi integration
-export class LenfiAdapter implements ProtocolAdapter {
-  name = 'lenfi';
+// FluidTokens integration
+export class FluidTokensAdapter implements ProtocolAdapter {
+  name = 'fluidtokens';
   // Similar implementation...
 }
 
@@ -196,7 +196,7 @@ export class YieldAggregator {
   constructor() {
     this.adapters = [
       new LiqwidAdapter(),
-      new LenfiAdapter(),
+      new FluidTokensAdapter(),
       new MinswapLpAdapter(),
     ];
   }
@@ -257,7 +257,7 @@ begin yield history --asset USDA --protocol liqwid --days 30 [--json]
 │ Protocol │ Asset    │ Type   │ APY   │ TVL      │ Risk   │
 ├──────────┼──────────┼────────┼───────┼──────────┼────────┤
 │ Liqwid   │ USDA     │ Lend   │ 8.2%  │ $2.1M    │ Low    │
-│ Lenfi    │ USDA     │ Lend   │ 7.8%  │ $890K    │ Medium │
+│ FluidTokens    │ USDA     │ Lend   │ 7.8%  │ $890K    │ Medium │
 │ Minswap  │ USDA/ADA │ LP     │ 12.4% │ $1.5M    │ Medium │
 │ Indigo   │ iUSD     │ Synth  │ 5.1%  │ $3.2M    │ Low    │
 └──────────┴──────────┴────────┴───────┴──────────┴────────┘
@@ -276,7 +276,7 @@ begin yield history --asset USDA --protocol liqwid --days 30 [--json]
 
 ### 2.3 Stablecoin Savings Vault (HIGH PRIORITY)
 
-**Research Reference:** "One-tap deposit → earn yield across Liqwid/Lenfi/Minswap LPs"
+**Research Reference:** "One-tap deposit → earn yield across Liqwid/FluidTokens/Minswap LPs"
 
 **Current State:** ❌ Not implemented
 
@@ -322,7 +322,7 @@ export const VAULT_STRATEGIES: Record<VaultStrategy, VaultConfig> = {
     strategy: 'balanced',
     allocations: [
       { protocol: 'liqwid', percentage: 60, targetAsset: 'USDA' },
-      { protocol: 'lenfi', percentage: 40, targetAsset: 'USDA' },
+      
     ],
   },
   aggressive: {
@@ -408,7 +408,7 @@ export class VaultService {
   constructor() {
     this.depositors = new Map([
       ['liqwid', new LiqwidDepositor()],
-      ['lenfi', new LenfiDepositor()],
+      ['fluidtokens', new FluidTokensDepositor()],
       ['minswap-lp', new MinswapLpDepositor()],
     ]);
     this.yieldAggregator = new YieldAggregator();
@@ -993,7 +993,7 @@ begin pay history [--limit 20] [--json]
 |------|--------|------------------------|
 | Create YieldAggregator service | 3d | `services/yield-aggregator.ts` |
 | Implement Liqwid adapter | 2d | `services/adapters/liqwid.ts` |
-| Implement Lenfi adapter | 2d | `services/adapters/lenfi.ts` |
+| Implement FluidTokens adapter | 2d | `services/adapters/fluidtokens.ts` |
 | Implement Minswap LP adapter | 2d | `services/adapters/minswap-lp.ts` |
 | Create yield CLI commands | 2d | `commands/yield/*.tsx` |
 | Add yield comparison UI | 1d | `commands/yield/compare.tsx` |
@@ -1010,7 +1010,7 @@ begin pay history [--limit 20] [--json]
 |------|--------|------------------------|
 | Design vault architecture | 2d | `lib/vault.ts` |
 | Implement LiqwidDepositor | 3d | `services/depositors/liqwid.ts` |
-| Implement LenfiDepositor | 3d | `services/depositors/lenfi.ts` |
+| Implement FluidTokensDepositor | 3d | `services/depositors/fluidtokens.ts` |
 | Implement MinswapLpDepositor | 3d | `services/depositors/minswap-lp.ts` |
 | Create VaultService | 3d | `lib/vault.ts` |
 | Create vault CLI commands | 3d | `commands/vault/*.tsx` |
@@ -1106,7 +1106,7 @@ begin-cli/
 │       │
 │       └── adapters/            # NEW
 │           ├── liqwid.ts
-│           ├── lenfi.ts
+│           ├── fluidtokens.ts
 │           └── minswap-lp.ts
 │
 ├── tests/
@@ -1357,7 +1357,7 @@ The existing codebase is solid - MeshJS integration, wallet management, and Mins
 
 **Recommended Next Steps:**
 1. Review this plan with the team
-2. Validate Liqwid/Lenfi API availability
+2. Validate Liqwid/FluidTokens API availability
 3. Start Phase 1 implementation
 4. Set up monitoring for swap success rates
 

@@ -25,10 +25,10 @@
 | Gap | CLI | Extension | Priority |
 |-----|-----|-----------|----------|
 | Yield aggregation | ❌ | ❌ | HIGH |
-| Savings vaults | ❌ | ❌ | HIGH |
+| Savings vaults (Liqwid) | ❌ | ❌ | HIGH |
 | Stablecoin-optimized swap | 🟡 | 🟡 | HIGH |
 | DCA automation | ❌ | ❌ | MEDIUM |
-| Lenfi integration | ❌ | ❌ | MEDIUM |
+| FluidTokens integration | ❌ | ❌ | LOW (future) |
 | Multi-DEX routing | 🟡 | ✅ | LOW (extension has it) |
 
 ---
@@ -81,7 +81,7 @@ React Native + Expo. Budget 6 months. Existing migration plan is solid.
 
 ### Phase 2: Yield Intelligence (Weeks 3-4)
 - `useYieldAggregator` hook
-- Liqwid + Lenfi adapters
+- Liqwid adapter (FluidTokens deferred to Phase 5)
 - Yield dashboard view
 - `begin yield list/best/compare` commands
 
@@ -96,6 +96,11 @@ React Native + Expo. Budget 6 months. Existing migration plan is solid.
 - Background service for automation
 - Performance optimizations (offscreen docs, web workers)
 - Testing and launch prep
+
+### Phase 5: Protocol Expansion (Future)
+- FluidTokens integration (second lending protocol)
+- Additional yield sources
+- Multi-protocol vault strategies
 
 ---
 
@@ -121,7 +126,7 @@ React Native + Expo. Budget 6 months. Existing migration plan is solid.
 
 ### Near-Term
 
-4. **Lenfi integration** — Second lending protocol for diversification
+4. **FluidTokens integration** — Second lending protocol for diversification
 5. **Background price fetching** — Keep stablecoin peg data fresh
 6. **DCA executor service** — Chrome alarms API for scheduling
 
