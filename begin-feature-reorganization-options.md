@@ -21,7 +21,7 @@
 | Lend/Borrow (Liqwid) | ✅ Built | ✅ Core — "Savings Vault" |
 | ADA Staking | ✅ Built | ⚠️ Partial — "Earn on ADA" |
 | Boosted Staking | ✅ Built | ⚠️ Partial |
-| Precious Metals | ✅ Built | ❌ Off-brand |
+| Precious Metals | ✅ Built | ✅ Yes — "Digital Gold/Silver" (stable store of value) |
 | BTC Earn | ✅ Built | ⚠️ Partial |
 | Mynth Savings | ✅ Built | ✅ Yes — stablecoin bridge |
 
@@ -62,6 +62,7 @@
 ├─────────────────────────────────────┤
 │  EARN                               │
 │  - Savings Vault (Liqwid)           │
+│  - Digital Gold/Silver              │
 │  - Staking (ADA, SOL)               │
 │  - Yield Explorer                   │
 ├─────────────────────────────────────┤
@@ -82,7 +83,7 @@
 - NFTs → Buried in "More"
 - Governance → Buried in "More"
 - dApps Browser → Buried in "More"
-- Precious Metals → Remove or hide
+- Precious Metals → Keep in "Earn > Savings" (Digital Gold/Silver as inflation hedge)
 - Prediction Markets → Remove
 
 ### Pros
@@ -154,6 +155,7 @@ HOME
 
 EARN
 ├── Savings Vault (Liqwid)
+├── Digital Gold/Silver
 ├── Staking (ADA/SOL)
 ├── Auto-Invest (DCA)
 └── Yield Explorer
@@ -216,6 +218,7 @@ HAMBURGER MENU [≡]
 ├── 🏠 Home
 ├── 💰 Earn
 │   ├── Savings Vault
+│   ├── Digital Gold/Silver
 │   ├── Staking
 │   └── Yield Explorer
 ├── 📤 Send & Pay
@@ -269,7 +272,7 @@ HAMBURGER MENU [≡]
 | Wallet Home | **Home** (redesigned) | Clean balance view |
 | Invest > Lend | **Earn > Savings Vault** | Core feature |
 | Invest > Staking | **Earn > Staking** | Keep |
-| Invest > Metals | **Remove** or Shop | Off-brand |
+| Invest > Metals | **Earn > Digital Gold** | Stable store of value, inflation hedge |
 | Hub > eSIM | **Shop > eSIM** | "Spend your crypto" |
 | Hub > Travel | **Shop > Travel** | Keep |
 | Hub > Governance | **Advanced > Governance** | Power users |
@@ -298,7 +301,7 @@ HAMBURGER MENU [≡]
 4. **Simplify bottom nav** to 3 tabs
 
 ### Phase 3: Polish (4-6 weeks)
-1. **Remove off-brand features** (Metals, etc.)
+1. **Polish Earn section** (Vault, Staking, Digital Gold)
 2. **Add premium gates** to Pro features
 3. **A/B test** home vs wallet terminology
 4. **User research** on new IA
