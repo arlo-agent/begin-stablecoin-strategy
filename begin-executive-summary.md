@@ -127,7 +127,7 @@ See **[Begin Premium Strategy](begin-premium-strategy.md)** for comprehensive su
 |------|-------|--------------|
 | **Free** | $0 | Basic wallet, 3 wallets, basic DeFi |
 | **Pro** | $9.99/mo | P&L tracking, CSV export, Best Route PRO, unlimited alerts, yield optimizer |
-| **Enterprise** | $49.99/mo | API access, unlimited wallets, team management |
+| **Ultra** | $29.99/mo | Unlimited wallets, advanced analytics, priority support, early access |
 
 **Year 1 Revenue Projection (Moderate):** $178,500 ARR with 1,750 Pro subscribers
 

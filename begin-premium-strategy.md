@@ -16,7 +16,7 @@ Begin isn't another multi-chain wallet. It's the **onchain complement to your ba
 3. Stablecoin home market opportunity ($84B+ by 2026)
 4. User acquisition economics
 
-**Key Recommendation:** Launch a 3-tier subscription model (Free / Pro / Enterprise) with **Begin Pro at $9.99/month** ($7.99/month billed annually), monetizing features that are either already built or can be implemented within 30 days.
+**Key Recommendation:** Launch a 3-tier subscription model (Free / Pro / Ultra) with **Begin Pro at $9.99/month** ($7.99/month billed annually), monetizing features that are either already built or can be implemented within 30 days.
 
 **Conservative Revenue Projection:** $50,000-150,000 ARR in Year 1 with 500-1,500 Pro subscribers.
 
@@ -26,7 +26,7 @@ Begin isn't another multi-chain wallet. It's the **onchain complement to your ba
 
 ### Direct Competitors
 
-| Product | Free Tier | Pro Tier | Premium/Enterprise | Lifetime Option |
+| Product | Free Tier | Pro Tier | Premium/Ultra | Lifetime Option |
 |---------|-----------|----------|-------------------|-----------------|
 | **CoinStats** | 10 portfolios, 20K tx | $13.99/mo (yearly) | $62.91/mo (Degen) | $399 Premium, $2,600 Degen |
 | **Zerion** | Basic tracking | NFT-based (DNA) | Fee discounts, P&L, CSV | 12-month subscriptions |
@@ -61,19 +61,19 @@ Begin isn't another multi-chain wallet. It's the **onchain complement to your ba
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                           BEGIN WALLET TIERS                                │
 ├─────────────────┬─────────────────────┬─────────────────────────────────────┤
-│    FREE         │      PRO            │         ENTERPRISE                  │
-│    $0/mo        │    $9.99/mo         │        $49.99/mo                    │
-│                 │  ($7.99/mo annual)  │     ($39.99/mo annual)              │
+│    FREE         │      PRO            │         ULTRA                       │
+│    $0/mo        │    $9.99/mo         │        $29.99/mo                    │
+│                 │  ($7.99/mo annual)  │     ($23.99/mo annual)              │
 ├─────────────────┼─────────────────────┼─────────────────────────────────────┤
 │ • Basic wallet  │ • Everything Free + │ • Everything Pro +                  │
-│ • Send/receive  │ • P&L tracking      │ • API access                        │
-│ • Basic swap    │ • CSV tax export    │ • Multi-wallet (10+)                │
-│ • 3 wallets     │ • Best route PRO    │ • White-label option                │
-│ • Basic DeFi    │ • 10 wallets        │ • Dedicated support                 │
-│ • Community     │ • Price alerts (∞)  │ • Custom integrations               │
-│   support       │ • Yield optimizer   │ • SLA guarantees                    │
-│                 │ • Priority support  │ • Team management                   │
-│                 │ • Auto-compound*    │                                     │
+│ • Send/receive  │ • P&L tracking      │ • Unlimited wallets                 │
+│ • Basic swap    │ • CSV tax export    │ • Advanced P&L analytics            │
+│ • 3 wallets     │ • Best route PRO    │ • Unlimited trade history           │
+│ • Basic DeFi    │ • 10 wallets        │ • Priority support (24h)            │
+│ • Community     │ • Price alerts (∞)  │ • Early access to features          │
+│   support       │ • Yield optimizer   │ • Higher DCA/automation limits      │
+│                 │ • Priority support  │ • Custom price alert rules          │
+│                 │ • Auto-compound*    │ • Portfolio export (PDF)            │
 │                 │ • DCA automation*   │                                     │
 └─────────────────┴─────────────────────┴─────────────────────────────────────┘
                         * Coming in v2.5
@@ -96,7 +96,7 @@ Begin isn't another multi-chain wallet. It's the **onchain complement to your ba
 | Tier | Lifetime Price | Break-Even | Rationale |
 |------|---------------|------------|-----------|
 | Pro Lifetime | $199 | 20 months | Lower than CoinStats ($399), impulse-buy friendly |
-| Enterprise Lifetime | $999 | 20 months | For DAOs, funds, power users |
+| Ultra Lifetime | $499 | 17 months | For power users, whales, and crypto enthusiasts |
 
 ---
 
@@ -104,8 +104,8 @@ Begin isn't another multi-chain wallet. It's the **onchain complement to your ba
 
 ### Detailed Feature Breakdown
 
-| Feature | Free | Pro | Enterprise | Implementation Status |
-|---------|------|-----|------------|----------------------|
+| Feature | Free | Pro | Ultra | Implementation Status |
+|---------|------|-----|-------|----------------------|
 | **WALLET CORE** |
 | Multi-chain wallet (ADA, BTC) | ✅ | ✅ | ✅ | ✅ Built |
 | Hardware wallet (Ledger, Keystone) | ✅ | ✅ | ✅ | ✅ Built |
@@ -115,7 +115,7 @@ Begin isn't another multi-chain wallet. It's the **onchain complement to your ba
 | Basic swap (single DEX) | ✅ | ✅ | ✅ | ✅ Built |
 | Multi-DEX routing | Basic | **Best Route PRO** | ✅ | ✅ Built, needs gate |
 | Slippage optimization | ❌ | ✅ | ✅ | 🟡 2 days |
-| Trade history | 30 days | Unlimited | Unlimited | 🟡 Config change |
+| Trade history | 30 days | 1 year | Unlimited | 🟡 Config change |
 | **DEFI** |
 | Liqwid lend/borrow | ✅ | ✅ | ✅ | ✅ Built |
 | FluidTokens boosted | ✅ | ✅ | ✅ | ✅ Built |
@@ -123,27 +123,29 @@ Begin isn't another multi-chain wallet. It's the **onchain complement to your ba
 | Auto-compound | ❌ | ✅ | ✅ | 🔴 Phase 2 |
 | **ANALYTICS** |
 | Basic balance view | ✅ | ✅ | ✅ | ✅ Built |
-| P&L tracking | ❌ | ✅ | ✅ | 🟡 2 weeks |
+| P&L tracking | ❌ | ✅ | **Advanced** | 🟡 2 weeks |
 | Portfolio history | 7 days | 1 year | Unlimited | 🟡 Config + backend |
+| Portfolio PDF export | ❌ | ❌ | ✅ | 🟡 1 week |
 | **TAX & EXPORT** |
 | Transaction history | ✅ | ✅ | ✅ | ✅ Built |
 | CSV export | ❌ | ✅ | ✅ | 🟡 3 days |
 | Tax report format | ❌ | ✅ | ✅ | 🟡 1 week |
 | **ALERTS** |
 | Price alerts | 3 | Unlimited | Unlimited | ✅ Built |
+| Custom alert rules | ❌ | ❌ | ✅ | 🟡 1 week |
 | Depeg alerts | ❌ | ✅ | ✅ | 🟡 3 days |
 | Yield alerts | ❌ | ✅ | ✅ | 🟡 3 days |
 | **AUTOMATION** |
-| DCA scheduling | ❌ | ✅ | ✅ | 🔴 Phase 2 |
+| DCA scheduling | ❌ | ✅ (5 active) | Unlimited | 🔴 Phase 2 |
 | Auto-rebalance | ❌ | ❌ | ✅ | 🔴 Phase 3 |
+| Higher automation limits | ❌ | ❌ | ✅ | 🟡 Config |
 | **SUPPORT** |
 | Community (Discord) | ✅ | ✅ | ✅ | ✅ Exists |
 | Priority email | ❌ | ✅ | ✅ | 🟡 Process |
-| Dedicated support | ❌ | ❌ | ✅ | 🟡 Process |
-| **ENTERPRISE** |
-| API access | ❌ | ❌ | ✅ | 🔴 Phase 3 |
-| Team management | ❌ | ❌ | ✅ | 🔴 Phase 3 |
-| Custom branding | ❌ | ❌ | ✅ | 🔴 Phase 3 |
+| 24h priority support | ❌ | ❌ | ✅ | 🟡 Process |
+| **POWER USER** |
+| Early access to features | ❌ | ❌ | ✅ | 🟡 Process |
+| Beta testing invites | ❌ | ❌ | ✅ | 🟡 Process |
 
 ### Legend
 - ✅ Built — Feature exists in codebase
@@ -168,7 +170,7 @@ These features exist in the codebase and can be gated behind subscription with m
 ```typescript
 // useSwap.ts already has dexes object with 14+ DEXs
 // Add subscription check before showing route comparison
-const showBestRoute = user.subscription === 'pro' || user.subscription === 'enterprise';
+const showBestRoute = user.subscription === 'pro' || user.subscription === 'ultra';
 ```
 
 **Effort:** 1-2 days (UI gating + subscription check)
@@ -199,7 +201,7 @@ if (alerts.length >= MAX_FREE_ALERTS && !isPro) {
 **Premium Gate:**
 - Free: 3 wallets
 - Pro: 10 wallets
-- Enterprise: Unlimited
+- Ultra: Unlimited
 
 **Implementation:** Configuration change in account creation flow
 
@@ -212,7 +214,7 @@ if (alerts.length >= MAX_FREE_ALERTS && !isPro) {
 **Premium Gate:**
 - Free: 30 days
 - Pro: 1 year
-- Enterprise: Unlimited
+- Ultra: Unlimited
 
 **Implementation:** Query parameter filtering based on subscription
 
@@ -326,7 +328,7 @@ if (alerts.length >= MAX_FREE_ALERTS && !isPro) {
 | Pro Monthly ($9.99) | 40% | $71,400 |
 | Pro Annual ($95.88) | 35% | $62,475 |
 | Pro Lifetime ($199) | 15% | $26,775 |
-| Enterprise | 10% | $17,850 |
+| Ultra | 10% | $17,850 |
 | **Total** | **100%** | **$178,500** |
 
 ### Break-Even Analysis
@@ -384,7 +386,7 @@ if (alerts.length >= MAX_FREE_ALERTS && !isPro) {
 
 ### Phase 3: Automation (Weeks 7-12) 🤖
 
-**Goal:** Ship automation features, enterprise tier
+**Goal:** Ship automation features, Ultra tier
 
 | Task | Owner | Days | Dependencies |
 |------|-------|------|--------------|
@@ -392,14 +394,14 @@ if (alerts.length >= MAX_FREE_ALERTS && !isPro) {
 | Auto-compound UI | Frontend | 5 | Service |
 | DCA scheduler | Backend | 10 | Swap integration |
 | DCA management UI | Frontend | 5 | Scheduler |
-| Enterprise features spec | Product | 3 | Phase 2 complete |
-| API documentation | Backend | 5 | Enterprise spec |
+| Ultra features (limits, analytics) | Product | 3 | Phase 2 complete |
+| Advanced P&L analytics | Frontend | 5 | P&L tracking |
 | **Total** | | **38 days** | |
 
 **Deliverables:**
 - Auto-compound for lending positions
 - DCA scheduling and execution
-- Enterprise API access
+- Ultra tier advanced features
 
 ### Timeline Summary
 
@@ -450,7 +452,7 @@ Week  1  2  3  4  5  6  7  8  9  10  11  12
 // Subscription model
 interface UserSubscription {
   userId: string;
-  tier: 'free' | 'pro' | 'enterprise';
+  tier: 'free' | 'pro' | 'ultra';
   status: 'active' | 'canceled' | 'past_due' | 'trialing';
   billingCycle: 'monthly' | 'annual' | 'lifetime';
   currentPeriodStart: Date;
@@ -463,13 +465,19 @@ interface UserSubscription {
 interface FeatureFlags {
   maxWallets: number;
   maxAlerts: number;
+  maxDcaSchedules: number;
   bestRouteEnabled: boolean;
   plTrackingEnabled: boolean;
+  advancedPlEnabled: boolean;
   csvExportEnabled: boolean;
+  pdfExportEnabled: boolean;
   autoCompoundEnabled: boolean;
   dcaEnabled: boolean;
-  apiAccessEnabled: boolean;
+  autoRebalanceEnabled: boolean;
+  customAlertRulesEnabled: boolean;
+  earlyAccessEnabled: boolean;
   prioritySupport: boolean;
+  priority24hSupport: boolean;
 }
 
 // Feature flag defaults by tier
@@ -477,35 +485,53 @@ const TIER_FEATURES: Record<string, FeatureFlags> = {
   free: {
     maxWallets: 3,
     maxAlerts: 3,
+    maxDcaSchedules: 0,
     bestRouteEnabled: false,
     plTrackingEnabled: false,
+    advancedPlEnabled: false,
     csvExportEnabled: false,
+    pdfExportEnabled: false,
     autoCompoundEnabled: false,
     dcaEnabled: false,
-    apiAccessEnabled: false,
+    autoRebalanceEnabled: false,
+    customAlertRulesEnabled: false,
+    earlyAccessEnabled: false,
     prioritySupport: false,
+    priority24hSupport: false,
   },
   pro: {
     maxWallets: 10,
     maxAlerts: Infinity,
+    maxDcaSchedules: 5,
     bestRouteEnabled: true,
     plTrackingEnabled: true,
+    advancedPlEnabled: false,
     csvExportEnabled: true,
+    pdfExportEnabled: false,
     autoCompoundEnabled: true,
     dcaEnabled: true,
-    apiAccessEnabled: false,
+    autoRebalanceEnabled: false,
+    customAlertRulesEnabled: false,
+    earlyAccessEnabled: false,
     prioritySupport: true,
+    priority24hSupport: false,
   },
-  enterprise: {
+  ultra: {
     maxWallets: Infinity,
     maxAlerts: Infinity,
+    maxDcaSchedules: Infinity,
     bestRouteEnabled: true,
     plTrackingEnabled: true,
+    advancedPlEnabled: true,
     csvExportEnabled: true,
+    pdfExportEnabled: true,
     autoCompoundEnabled: true,
     dcaEnabled: true,
-    apiAccessEnabled: true,
+    autoRebalanceEnabled: true,
+    customAlertRulesEnabled: true,
+    earlyAccessEnabled: true,
     prioritySupport: true,
+    priority24hSupport: true,
   },
 };
 ```
@@ -518,7 +544,7 @@ const TIER_FEATURES: Record<string, FeatureFlags> = {
 | User database | PostgreSQL | Subscription state |
 | Price history | TimescaleDB/InfluxDB | P&L calculations |
 | Background jobs | Redis + Bull | Auto-compound, DCA |
-| API | Express/Fastify | Enterprise API access |
+| API | Express/Fastify | Future expansion |
 
 ### Extension Changes
 
@@ -643,19 +669,21 @@ const TIER_FEATURES: Record<string, FeatureFlags> = {
 
 ## Appendix A: Feature Comparison with Competitors
 
-| Feature | Begin Free | Begin Pro | CoinStats Premium | Zerion Premium |
-|---------|------------|-----------|-------------------|----------------|
-| Price | $0 | $9.99/mo | $13.99/mo | NFT-based |
-| Portfolios/Wallets | 3 | 10 | 100 | Unlimited |
-| Transactions | Unlimited | Unlimited | 100K | Unlimited |
-| P&L Tracking | ❌ | ✅ | ✅ | ✅ |
+| Feature | Begin Free | Begin Pro | Begin Ultra | CoinStats Premium |
+|---------|------------|-----------|-------------|-------------------|
+| Price | $0 | $9.99/mo | $29.99/mo | $13.99/mo |
+| Portfolios/Wallets | 3 | 10 | Unlimited | 100 |
+| Transactions | Unlimited | Unlimited | Unlimited | 100K |
+| P&L Tracking | ❌ | ✅ | **Advanced** | ✅ |
 | Tax Export | ❌ | ✅ | ✅ | ✅ |
-| Price Alerts | 3 | Unlimited | Custom | Limited |
-| **DeFi (multi-chain)** | ✅ | ✅ | ❌ | ❌ |
-| **Multi-DEX Routing** | Basic | Pro | ❌ | ❌ |
-| **Liqwid Integration** | ✅ | ✅ | ❌ | ❌ |
-| **Yield Optimization** | ❌ | ✅ | ❌ | ❌ |
-| **Auto-Compound** | ❌ | ✅ | ❌ | ❌ |
+| Price Alerts | 3 | Unlimited | Unlimited + Custom | Custom |
+| **DeFi (multi-chain)** | ✅ | ✅ | ✅ | ❌ |
+| **Multi-DEX Routing** | Basic | Pro | Pro | ❌ |
+| **Liqwid Integration** | ✅ | ✅ | ✅ | ❌ |
+| **Yield Optimization** | ❌ | ✅ | ✅ | ❌ |
+| **Auto-Compound** | ❌ | ✅ | ✅ | ❌ |
+| **Auto-Rebalance** | ❌ | ❌ | ✅ | ❌ |
+| **Early Access** | ❌ | ❌ | ✅ | ❌ |
 
 ---
 

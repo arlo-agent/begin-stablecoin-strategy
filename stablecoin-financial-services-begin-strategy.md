@@ -204,8 +204,7 @@ Position Begin as the **primary interface** between users and Cardano's stableco
 |----------------|-------|
 | **Vault management fee** | 0.1-0.5% annual on AUM |
 | **Swap routing fee** | 0.05-0.1% per transaction |
-| **Premium subscription** | $9.99/mo Pro, $49.99/mo Enterprise |
-| **B2B API access** | Enterprise pricing for treasury management |
+| **Premium subscription** | $9.99/mo Pro, $29.99/mo Ultra |
 
 ### Premium Subscription Model
 
@@ -215,8 +214,9 @@ See **[Begin Premium Strategy](begin-premium-strategy.md)** for detailed subscri
 |------|---------|--------|--------------|
 | Free | $0 | $0 | Basic wallet, 3 wallets, basic DeFi |
 | **Pro** | $9.99 | $95.88 | P&L tracking, CSV export, Best Route PRO, unlimited alerts |
-| Enterprise | $49.99 | $479.88 | API access, unlimited wallets, team management |
+| **Ultra** | $29.99 | $287.88 | Unlimited wallets, advanced analytics, priority support, early access |
 | Pro Lifetime | — | $199 | All Pro features, forever |
+| Ultra Lifetime | — | $499 | All Ultra features, forever |
 
 **Year 1 Revenue Projections:**
 - Conservative: $51,000 (500 Pro subscribers)
