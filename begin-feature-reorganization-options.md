@@ -7,7 +7,7 @@
 ## Current Feature Inventory
 
 ### Core Wallet
-| Feature | Status | Fits "Bank" Theme? |
+| Feature | Status | Fits "Home" Theme? |
 |---------|--------|-------------------|
 | Wallet Home | ✅ Built | 🔄 Needs redesign |
 | Send | ✅ Built | ✅ Yes ("Transfer") |
@@ -16,7 +16,7 @@
 | Transaction History | ✅ Built | ✅ Yes ("Statements") |
 
 ### Invest Section
-| Feature | Status | Fits "Bank" Theme? |
+| Feature | Status | Fits "Home" Theme? |
 |---------|--------|-------------------|
 | Lend/Borrow (Liqwid) | ✅ Built | ✅ Core — "Savings Vault" |
 | ADA Staking | ✅ Built | ⚠️ Partial — "Earn on ADA" |
@@ -26,7 +26,7 @@
 | Mynth Savings | ✅ Built | ✅ Yes — stablecoin bridge |
 
 ### Hub Section
-| Feature | Status | Fits "Bank" Theme? |
+| Feature | Status | Fits "Home" Theme? |
 |---------|--------|-------------------|
 | Midnight Claim | ✅ Built | ❌ Temporary promo |
 | eSIM Shop | ✅ Built | ⚠️ "Spend" category |
@@ -34,7 +34,7 @@
 | Governance | ✅ Built | ❌ Off-brand |
 
 ### Other Features
-| Feature | Status | Fits "Bank" Theme? |
+| Feature | Status | Fits "Home" Theme? |
 |---------|--------|-------------------|
 | NFTs/Collectibles | ✅ Built | ❌ Off-brand |
 | dApps Browser | ✅ Built | ⚠️ Power user |
@@ -49,7 +49,7 @@
 
 ## Option 1: "Clean Slate" — Full Rebrand
 
-**Philosophy:** Rebuild home screen entirely around home metaphor. Hide non-bank features.
+**Philosophy:** Rebuild home screen entirely around home metaphor. Hide non-core features.
 
 ### New Structure
 ```
@@ -99,17 +99,17 @@
 
 ## Option 2: "Progressive Disclosure" — Layers
 
-**Philosophy:** Bank features prominent, everything else accessible but secondary.
+**Philosophy:** Core features prominent, everything else accessible but secondary.
 
 ### New Structure
 ```
 ┌─────────────────────────────────────┐
-│  HOME (Bank Mode - Default)         │
+│  HOME (Home Mode - Default)         │
 │  - Cash Balance                     │
 │  - Savings Vault                    │
 │  - Quick Actions: Add/Send/Earn     │
 ├─────────────────────────────────────┤
-│  Toggle: [Bank] [Wallet]            │
+│  Toggle: [Home] [Wallet]            │
 ├─────────────────────────────────────┤
 │  WALLET MODE (Power User)           │
 │  - All tokens                       │
@@ -121,7 +121,7 @@
 ```
 
 ### How It Works
-- Default view = "Bank Mode" (stablecoins, savings, simple)
+- Default view = "Home Mode" (stablecoins, savings, simple)
 - Toggle to "Wallet Mode" for full crypto features
 - Power users get everything, normies get simplicity
 
@@ -182,7 +182,7 @@ MORE
 ### Pros
 - ✅ Everything accessible
 - ✅ Clear mental model
-- ✅ Bank features prominent in Home/Earn
+- ✅ Core features prominent in Home/Earn
 
 ### Cons
 - ❌ 5 tabs may be too many
@@ -191,7 +191,7 @@ MORE
 
 ---
 
-## Option 4: "Bank + Power Menu" — Hybrid (RECOMMENDED)
+## Option 4: "Home + Power Menu" — Hybrid (RECOMMENDED)
 
 **Philosophy:** Stablecoin-first home, power features in slide-out menu.
 
@@ -201,7 +201,7 @@ MORE
 │  [≡]  Begin                  [Pro]  │
 ├─────────────────────────────────────┤
 │                                     │
-│  HOME (Always Bank-Focused)         │
+│  HOME (Always Home-Focused)         │
 │  - Total Balance                    │
 │  - Cash Section                     │
 │  - Savings Vault                    │
@@ -242,7 +242,7 @@ HAMBURGER MENU [≡]
 ```
 
 ### How It Works
-1. **Home screen** = Pure bank experience
+1. **Home screen** = Pure stablecoin home experience
 2. **Bottom nav** = 3 tabs (simple)
 3. **Hamburger** = Everything else organized
 4. **"Advanced"** = Crypto-native features for power users
@@ -300,22 +300,22 @@ HAMBURGER MENU [≡]
 ### Phase 3: Polish (4-6 weeks)
 1. **Remove off-brand features** (Metals, etc.)
 2. **Add premium gates** to Pro features
-3. **A/B test** bank vs wallet terminology
+3. **A/B test** home vs wallet terminology
 4. **User research** on new IA
 
 ---
 
 ## My Recommendation
 
-**Go with Option 4 (Bank + Power Menu)** because:
+**Go with Option 4 (Home + Power Menu)** because:
 
 1. **Doesn't alienate existing users** — Everything still accessible
-2. **Strong bank identity** — Home screen is 100% bank-focused
+2. **Strong home identity** — Home screen is 100% home-focused
 3. **Scalable** — Easy to add/remove features from menu
 4. **Low risk** — Can implement incrementally
 5. **Premium-ready** — Pro features naturally live in menu sections
 
-The key insight: **Home screen = marketing.** That's what people see first. Make it scream "Stablecoin Bank." Everything else can live in the menu for those who need it.
+The key insight: **Home screen = marketing.** That's what people see first. Make it scream "Your Stablecoin Home." Everything else can live in the menu for those who need it.
 
 ---
 

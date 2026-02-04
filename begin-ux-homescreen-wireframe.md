@@ -7,7 +7,7 @@
 
 ## Design Philosophy
 
-1. **Stablecoin-first, crypto-second** — Language and layout familiar to banking apps
+1. **Stablecoin-first, crypto-second** — Language and layout familiar to financial apps
 2. **Stablecoins prominent** — Not buried under "tokens"
 3. **Actions oriented around money goals** — Save, Send, Earn, Spend
 4. **Chains invisible** — Users see dollars, not networks
@@ -142,7 +142,7 @@
 - **Monthly gain/loss** — reinforces "your money is working"
 - Clean, confident, no clutter
 
-### 2. Primary Actions — The "Bank Bar"
+### 2. Primary Actions — The "Action Bar"
 ```
 ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐
 │   Add    │  │   Send   │  │   Earn   │  │   Swap   │
@@ -156,7 +156,7 @@
 Note: "Earn" is prominent — this is our moat.
 
 ### 3. Cash Section — Stablecoins First
-- Labeled "Cash" not "Stablecoins" — banking language
+- Labeled "Cash" not "Stablecoins" — familiar language
 - Shows which are **earning yield** vs idle
 - **Nudge:** "💡 $2,600 idle — Earn up to 5.1%"
 - Progress bars show relative allocation
@@ -181,7 +181,7 @@ Note: "Earn" is prominent — this is our moat.
 - **Pro badge**
 
 ### 7. Recent Activity
-- Bank-statement style
+- Statement style
 - Yield earnings highlighted (💰)
 - Human-readable ("Received $500" not "0x3f...4a")
 
